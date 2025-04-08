@@ -10,7 +10,7 @@ public class Main {
         System.out.println("CREACIÓN DE CLASES");
         System.out.print("¿Cuántas clases quieres crear?: ");
         int numClases = sc.nextInt();
-        sc.nextLine();  // Limpiar buffer
+        sc.nextLine();  
 
         for (int i = 0; i < numClases; i++) {
             System.out.println("Introduce el curso:");
@@ -18,11 +18,11 @@ public class Main {
 
             System.out.println("Introduce el número de la clase:");
             int numero = sc.nextInt();
-            sc.nextLine();  // Limpiar buffer
+            sc.nextLine();
 
             System.out.println("Introduce la capacidad máxima:");
             int capacidadMaxima = sc.nextInt();
-            sc.nextLine();  // Limpiar buffer
+            sc.nextLine();  
 
             listaClases.add(new Clase(curso, numero, capacidadMaxima));
         }
@@ -35,7 +35,7 @@ public class Main {
         System.out.println("\nCREACIÓN DE ALUMNOS");
         System.out.print("¿Cuántos alumnos quieres crear?: ");
         int numAlumnos = sc.nextInt();
-        sc.nextLine();  // Limpiar buffer
+        sc.nextLine();
 
         for (int i = 0; i < numAlumnos; i++) {
             System.out.println("Introduce el nombre del alumno:");
@@ -49,7 +49,7 @@ public class Main {
 
             System.out.println("Introduce la edad del alumno:");
             int edad = sc.nextInt();
-            sc.nextLine();  // Limpiar buffer
+            sc.nextLine(); 
 
             listaAlumnos.add(new Alumno(nombre, apellido, dni, edad));
         }
